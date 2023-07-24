@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="estilo.css">
+    <title>Meu Site</title>
+</head>
+
+
+<body>
+    <header>
+        <section>
+            <img class="conteudo" src="logo.png" alt="logo da empresa XPTO" width="200px" />
+
+            <nav>
+                <ul>
+                    <li>
+                        <a class="botao botao-destaque" href="inicio1.html">
+                            Início
+                        </a><br><br>                       
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                         <a class="botao botao-destaque" href="contato1.html">
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <section class="sobre">
+            <article class="sobre article">
+                <h1 class="sobre article h1">Heitor Conceição</h1>
+                <h2 class="sobre article h2">Landing Page</h2>
+                <p class="sobre article p">
+                    What is Lorem Ipsum?
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p><br>
+                <a href="Saiba mais...">
+                    Saiba mais...
+                </a>
+            </article>
+
+            <figcaption class="sobre article figcaption img">
+                <img src="pessoas.png" alt="Criação de site" width="600px" />
+            </figcaption>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="logo-insta.png" alt="Instagram" />                                      
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="logo-facebook.png" alt="Facebook" />
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="logo-twitter.png" alt="Twitter" />
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+
+</html>
