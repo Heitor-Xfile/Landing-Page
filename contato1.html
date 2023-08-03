@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="estilo.css">
+    <title>Meu Site</title>
+</head>
+
+
+<body>
+    <header>
+        <section>
+            <img class="conteudo" src="logo.png" alt="logo da empresa XPTO" width="200px" />
+
+            <nav>
+                <ul>
+                    <li>
+                        <a class="botao botao-destaque" href="inicio1.html">
+                            Início
+                        </a><br><br>                       
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                         <a class="botao botao-destaque" href="contato1.html">
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header><br>
+
+    <main>
+        <section class="sobre">
+            <article class="sobre article">
+               <h1 class="sobre article h1">Formulário de Contato</h1>
+               <p class="sobre article p">Preencha os dados abaixo e envie sua mensagem de contato.</p>
+
+               <fieldset>
+                <legend>
+                    <h5 class="rotulo" style="color: darkmagenta; font-size: 30px;">Dados de Contato</h5>
+                </legend>
+                <form id="frmInscricao" action="contato.php" method="POST">
+
+                    <label class="agrupamento: rotulo">Nome:</label><br>
+                    <input class="entrada" type="text" required="required" id="txtNome" maxlength="100" size="50"><br><br>
+                    <label class="agrupamento: rotulo" for="text">Data de Nascimento</label><br>
+                    <input class="entrada" type="date"><br><br>
+                    <label class="agrupamento: rotulo" for="txtGenero">Sexo</label><br>
+                    <input class="entrada:focus" type="radio" id="rdoF" name="rdoSexo" value="F">
+                    <label for="rdoF">Feminino</label>
+                    <input class="entrada:focus" type="radio" id="rdoM" name="rdoSexo" value="M">
+                    <label for="rdoM">Masculino</label><br><br>
+                    <label class="agrupamento: rotulo" for="text">Endereço</label><br><br>
+                    <input class="entrada" type="text" placeholder="Rua, número" /><br><br>
+                    <label class="agrupamento: rotulo">Estado:</label><br>
+                    <select id="cbxEstado" required>
+                        <option value="">-Selecione-</option>
+                        <option value="1">AC</option>
+                        <option value="2">AL</option>
+                        <option value="3">AP</option>
+                        <option value="4">AM</option>
+                        <option value="5">BA</option>
+                        <option value="6">CE</option>
+                        <option value="7">ES</option>
+                        <option value="8">GO</option>
+                        <option value="9">MA</option>
+                        <option value="10">MT</option>
+                        <option value="11">MS</option>
+                        <option value="12">MG</option>
+                        <option value="13">PA</option>
+                        <option value="14">PB</option>
+                        <option value="15">PR</option>
+                        <option value="16">PE</option>
+                        <option value="17">PI</option>
+                        <option value="18">RJ</option>
+                        <option value="19">RN</option>
+                        <option value="20">RS</option>
+                        <option value="21">RO</option>
+                        <option value="22">RR</option>
+                        <option value="23">SC</option>
+                        <option value="24">SP</option>
+                        <option value="25">SE</option>
+                        <option value="26">TO</option>
+                    </select><br><br>
+                    <label class="agrupamento: rotulo">Cidade:</label><br>
+                    <select id="cbxCidade" required>
+                        <option value="">-Selecione-</option>
+                    </select><br><br>
+                    <label class="agrupamento: rotulo" for="txtNumero">Número</label><br>
+                    <input class="entrada" type="number" placeholder="(##) #####-####"/><br><br>
+                    <label class="agrupamento: rotulo" for="txtemail">E-mail</label><br>
+                    <input class="entrada" type="email" placeholder="Digite seu e-mail"/><br><br>
+                    <label class="agrupamento: rotulo">Áreas  de Interesse:</label><br>
+                    <input class="entrada:focus" type="checkbox" value="JavaScritp" name="chkAreasInteresse">
+                    <label>JavaScritp</label>
+                    <input class="entrada:focus" type="checkbox" value="HTML5" name="chkAreasInteresse">
+                    <label>HTML5</label>
+                    <input class="entrada:focus" type="checkbox" value="CSS" name="chkAreasInteresse">
+                    <label>CSS</label:><br><br>
+                    <label class="agrupamento: rotulo" for="txtname">Deixe aqui uma mensagem</label><br>
+                    <textarea class="entrada.mensagem: focus" style="border: 3px groove darkblue;" cols="30" rows="5"></textarea><br><br>
+                    <input style="padding: 10px; border: 3px groove yellow; background-color: rgba(224, 110, 17, 0.979);" class="rotulo" type="submit" value="Enviar" />
+                </form>
+               </fieldset>
+            </article>
+
+            
+        </section>
+
+
+    </main>
+
+    <footer>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="logo-insta.png" alt="Instagram" />                                      
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="logo-facebook.png" alt="Facebook" />
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="logo-twitter.png" alt="Twitter" />
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+
+</html>
